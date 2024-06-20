@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cards-container {
+  display: flex;
+  margin: 1.5rem;
+  border-radius: 16px;
+  max-width: 918px;
+  /* flex-wrap: wrap; */
+
+  /* Giving Border radius to whole container and making overflow hidden for edges */
+  border-radius: 2em;
+  overflow: hidden;  
+}
+
+.cards-container > div {
+  width: 100%;
+  /* Gives all cards equal width */
+  /* Alternative flex-basis: 100% */
+}
+
+/* To keep the buttons in one line (button will go out of position if content increases */
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box1 {
+  background-color: hsl(31, 77%, 52%);
+  padding-inline: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  /* border-radius: 16px 0 0 16px; */
+}
+
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+  padding-inline: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.box3 {
+  background-color: hsl(179, 100%, 13%);
+  /* border-radius: 0 16px 16px 0; */
+  overflow: hidden; 
+  padding-top: 25px;
+  padding-inline: 50px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  margin-block: 30px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+ p {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+
+.button > button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 22px;
+  margin-top: 30px;
+}
+
+.btn1 {
+  margin: 0px;
+  color: hsl(31, 77%, 52%);
+  font-weight: 700;
+}
+.btn2 {
+  margin: 0px;
+  color: hsl(184, 100%, 22%);
+  font-weight: 700;
+}
+.btn3 {
+  margin: 0px;
+  color: hsl(179, 100%, 13%);
+  font-weight: 700;
+}
+
+.btn1:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn2:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  font-weight: 700;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn3:hover {
+  background-color: hsl(179, 100%, 13%);
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* Handling a tag text */
+.anchor {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@media (max-width: 850px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+}
